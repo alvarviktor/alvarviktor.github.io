@@ -1,5 +1,12 @@
 @charset "UTF-8";
 
+/*!
+ * Bootstrap v4.0.0-beta (https://getbootstrap.com)
+ * Copyright 2011-2017 The Bootstrap Authors
+ * Copyright 2011-2017 Twitter, Inc.
+ * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
+ */
+
 @media print {
     *,
     :after,
@@ -11924,7 +11931,6 @@ ul {
 }
 
 a {
-    color: #4a4a4a;
     transition: all .3s;
     position: relative;
     text-decoration: none;
