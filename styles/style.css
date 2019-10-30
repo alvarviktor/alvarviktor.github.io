@@ -12004,7 +12004,6 @@ input[type=number]::-webkit-outer-spin-button {
 
 .personal-profile .personal-profile__avatar img {
     border-radius: 5px;
-    box-shadow: 0 0 27px rgba(96, 96, 96, .34);
     width: 90%;
     height: 380px;
     -o-object-fit: cover;
@@ -12270,14 +12269,15 @@ input[type=number]::-webkit-outer-spin-button {
 
 .project-card .project-card__img {
     padding-right: 0;
-    padding-left: 0
+    padding-left: 0;
+    background-color: #4a4a4a;
 }
 
 .project-card .project-card__img img {
     width: 100%;
     height: 100%;
     -o-object-fit: cover;
-    object-fit: cover
+    object-fit: cover;
 }
 
 .project-card .project-card__info {
