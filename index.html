@@ -41,7 +41,7 @@
   </div>
   <!--Main menu-->
 
-  <!-- Mobile menu -->
+  <!--Mobile menu-->
   <div class="mobile-menu d-lg-none">
     <div class="container">
       <div class="mobile-menu__close">
@@ -56,7 +56,7 @@
       </nav>
     </div>
   </div>
-  <!-- Mobile menu -->
+  <!--Mobile menu-->
 
   <!--Header-->
   <header class="main-header" style="background-image: url(images/img_bg_header.jpg)">
@@ -113,6 +113,18 @@
     <div class="row">
       <div class="col-md-10">
         <h2 id="resume_header" class="section__title" style="text-indent: -9999px; margin-bottom: 0">Resume_</h2>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-8 section__resume resume-list">
+        <h3 class="resume-list_title">experience</h3>
+        <div class="resume-list__block">
+          <p class="resume-list__block-title">Purposely</p>
+          <p class="resume-list__block-date">April 2019 - June 2019</p>
+          <p>
+            Software Developer Internship
+          </p>
+        </div>
       </div>
     </div>
     <div class="row">
@@ -329,7 +341,8 @@
         <div class="col-md-6 col-lg-7 project-card__info">
           <h3 class="project-card__title">BadgeBook</h3>
           <p class="project-card__description">
-            Project Description
+            A mobile friendly social media web application built using C# and ASP.NET Core that allows users to keep track
+            of Badges they have recieved from another authenticated website me and other students built.
           </p>
           <p class="project-card__stack">Used stack:</p>
           <ul class="tags">
@@ -349,7 +362,7 @@
         <div class="col-md-6 col-lg-7 project-card__info">
           <h3 class="project-card__title">Chess Game</h3>
           <p class="project-card__description">
-            Project Description
+            A cross-platform desktop Chess Game application built using Java and JavaFX.
           </p>
           <p class="project-card__stack">Used stack:</p>
           <ul class="tags">
@@ -583,7 +596,14 @@
             collecting data such as packet loss and transfer speed.
             <br>
             <br>
-            The application can switch the protocol used to transfer the files using TCP or 
+            The user must select the protocol they wish to use, TCP or UDP. Afterwards, they can choose to run the application as a
+            client or server. The server must be running before the client can connect to it, then the client must enter in the server's
+            IP address, port number, and the size and amount of packets they wish to send.
+            <br>
+            <br>
+            After experimenting with the application in a LAN, I found that transfering data using the TCP protocol is much more reliable
+            and has fewer missing packets. Meanwhile, transfering data using UDP is much quicker, but results in many lost packets when
+            sending lots of data.
           </p>
           <div class="portfolio-modal__link">
             <a href="https://github.com/alvarviktor/FileTransfer-ProtocolAnalysis" class="project-card__link" target="_blank">GitHub</a>
@@ -637,7 +657,19 @@
             </a>
           </div>
           <p class="portfolio-modal__description">
-
+            A mobile friendly social media web application built using C# and ASP.NET Core that allows users to keep track
+            of Badges they have recieved from another authenticated website me and other students built.
+            <br>
+            <br>
+            This project is part of a larger project that involved eight team members and split into two teams, BadgeBook and
+            <a href="https://github.com/ymszzq/DeveloperHelper">DeveloperHelper</a>. Both web applications communicate with
+            eachother via authenticated API calls and allows users of BadgeBook to log in to DeveloperHelper. Once users have
+            used DeveloperHelper, their progress is tracked and can be viewed as Badges on BadgeBook.
+            <br>
+            <br>
+            My main responsibility on team BadgeBook was to develop the user management features such as login, register,
+            authentication, search, and userprofile using ASP.NET Core's templates and scaffolding. Additionally, I also
+            implemented the API calls to DeveloperHelper to pull the progress of each user and present them as Badges.
           </p>
           <div  class="portfolio-modal__stack">
             <p class="portfolio-modal__stack-title">Using stack:</p>
@@ -666,7 +698,18 @@
           <p class="portfolio-modal__title">Chess Game</p>
           <img class="portfolio-modal__img" src="images/projects/img_chessgame_main.PNG" alt="modal_img">
           <p class="portfolio-modal__description">
-            Description Here
+            A cross-platform desktop Chess Game application built using Java and JavaFX.
+            <br>
+            <br>
+            The JavaFX Chess Game was the biggest programs I ever developed. There were many steps to creating
+            the Chess Game such as creating the board containg 8x8 squares and populating the board with pieces.
+            I also had to implement the game logic which included keeping track of turns with a boolean and validating
+            moves using basic algorithms. The program can also save and load game the state of the game using serialization.
+            <br>
+            <br>
+            The main purpose of building this application was to gain experience developing larger programs and also
+            strengthen my knowledge of object oriented programming and its main concepts. It allowed me to experience
+            how effective object oriented programming is by simulating a real game and converting real objects into code.
           </p>
           <div class="portfolio-modal__link">
             <a href="https://github.com/alvarviktor/JavaFX-ChessGame" class="project-card__link" target="_blank">GitHub</a>
