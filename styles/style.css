@@ -5345,7 +5345,8 @@ button.close {
 }
 
 .carousel {
-    position: relative
+    position: relative;
+    margin-bottom: 1em;
 }
 
 .carousel-inner {
@@ -5494,7 +5495,8 @@ button.close {
     padding-left: 0;
     margin-right: 15%;
     margin-left: 15%;
-    list-style: none
+    margin-bottom: 1em;
+    list-style: none;
 }
 
 .carousel-indicators li {
@@ -12739,33 +12741,35 @@ input[type=number]::-webkit-outer-spin-button {
 }
 
 .portfolio-modal .portfolio-modal__title {
+    font-size: 2em;
+    line-height: 30px;
     font-family: Roboto Mono, monospace;
+    text-transform: uppercase;
+    font-weight: 700;
     margin-bottom: 30px
 }
 
 .portfolio-modal .portfolio-modal__img {
     width: 100%;
-    margin-bottom: 30px
+    margin-bottom: 1em;
 }
 
 .portfolio-modal .portfolio-modal__description {
     font-size: 16px;
     line-height: 24px;
-    margin-bottom: 0
+    margin-bottom: 1em;
 }
 
 .portfolio-modal .portfolio-modal__link {
     font-family: Roboto Mono, monospace;
     font-size: 14px;
     line-height: 20px;
-    margin-top: 40px
 }
 
 .portfolio-modal .portfolio-modal__stack {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    margin-top: 40px
 }
 
 .portfolio-modal .portfolio-modal__stack-title {
@@ -13178,4 +13182,8 @@ input[type=number]::-webkit-outer-spin-button {
 
 .style-switcher.style-switcher--active {
     right: 0
+}
+
+.transparent-image {
+  background-color: #4a4a4a;
 }
