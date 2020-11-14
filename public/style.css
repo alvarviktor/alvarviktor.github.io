@@ -62,8 +62,7 @@ b {
   display: grid;
   grid-template-columns: auto;
   gap: 1em;
-  align-items: center;
-  justify-content: space-between;
+  justify-items: center;
 }
 
 .page-section > * {
@@ -153,17 +152,28 @@ b {
   padding: 0;
 }
 
-.aboout-me-external-links-container {
-  display: flex;
-  flex-direction: column;
+.about-me-external-links-container {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1em;
+  width: 425px;
 }
 
-.about-me-external-links-container > ul {
-  display: flex;
-  flex-direction: column;
+.links-grid {
+  display: grid;
+  grid-template-columns: 20px 1fr;
+  gap: 0.5em;
 }
 
-.about-me-external-links-container > ul > li > a {
+.links-grid > img {
+  justify-self: center;
+}
+
+.about-me-external-links-container a {
   text-decoration: none;
   color: white;
+}
+
+.about-me-external-links-container > .action-button {
+  grid-column: 1 / -1;
 }
