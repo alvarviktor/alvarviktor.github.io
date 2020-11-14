@@ -12,6 +12,9 @@
   --dark-colour-level-three: #1E1E1E;
 }
 
+/* ======== */
+/* Elements */
+/* ======== */
 *, *::before, *::after {
   box-sizing: inherit;
 }
@@ -51,6 +54,25 @@ b {
   font-weight: 900;
 }
 
+/* ============= */
+/* Common Styles */
+/* ============= */
+.page-section {
+  padding-top: 50px;
+  display: grid;
+  grid-template-columns: auto;
+  gap: 1em;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.page-section > * {
+  background-color: var(--dark-colour-level-two);
+  border-radius: 30px;
+  box-shadow: 0px 10px 6px -6px black;
+  padding: 1em;
+}
+
 /* ============== */
 /* Navigation Bar */
 /* ============== */
@@ -87,10 +109,6 @@ b {
   color: white;
 }
 
-.page-section {
-  padding-top: 50px;
-}
-
 /* ====== */
 /* Header */
 /* ====== */
@@ -118,32 +136,16 @@ b {
 /* ======== */
 /* About Me */
 /* ======== */
-#about-me {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: space-between;
-}
-
-.about-me-container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.about-me-container > * {
-  background-color: var(--dark-colour-level-two);
-  border-radius: 30px;
-  box-shadow: 0px 10px 6px -6px black;
-  padding: 1em;
-}
-
-.page-section > .section-title {
+.section-title {
   text-transform: uppercase;
   font-style: italic;
   text-decoration: underline;
   font-weight: bolder;
   font-size: 50px;
+  background-color: unset ;
+  border-radius: 0 ;
+  box-shadow: unset ;
+  padding: 0 ;
 }
 
 .about-me-image {
@@ -154,7 +156,6 @@ b {
 .aboout-me-external-links-container {
   display: flex;
   flex-direction: column;
-
 }
 
 .about-me-external-links-container > ul {
