@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
 @import 'switch-toggle.css';
 @import 'button.css';
 
@@ -6,7 +7,11 @@
   box-sizing: inherit;
 }
 
-html, body {
+p {
+  font-family: 'Open Sans', sans-serif;
+}
+
+html  body {
   margin: 0;
   box-sizing: border-box;
   font-family: 'Montserrat', sans-serif;
@@ -16,7 +21,8 @@ html, body {
 
 body {
   display: grid;
-  grid-template-columns: 20px 1fr 20px;
+  grid-template-columns: 40px 1fr 40px;
+  max-width: 100vw;
 }
 
 body > * {
@@ -28,13 +34,20 @@ h1, h2, h3 {
   margin: 0;
 }
 
+ul {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  list-style-type: none;
+}
+
 b {
   font-weight: 900;
 }
 /* ============== */
 /* Navigation Bar */
 /* ============== */
-#navbar {
+.navbar {
   display: flex;
   position: fixed;
   top: 0;
@@ -56,13 +69,13 @@ b {
   margin-right: 1em;
 }
 
-#navbar > ul {
+.navbar > ul {
   display: none;
   text-decoration: none;
   list-style-type: none;
 }
 
-#navbar > ul > li > a {
+.navbar > ul > li > a {
   text-decoration: none;
   color: white;
 }
@@ -105,6 +118,17 @@ b {
   align-items: center;
 }
 
+#about-me-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.about-me-container {
+  border-radius: 30px;
+  background-color: #191818;
+}
+
 .section-title {
   text-transform: uppercase;
   font-style: italic;
@@ -113,28 +137,19 @@ b {
   font-size: 50px;
 }
 
-#about-me-image {
+.about-me-image {
   display: flex;
   justify-content: center;
+  background-color: unset;
 }
 
-#about-me-image > img {
-  width: 80%;
+.about-me-image {
   border-radius: 30px;
+  width: auto;
 }
 
-#about-me-external-links-container {
-  background-color: #191818;
-  border-radius: 30px;
-  padding: 0.5em 1em;
-}
-
-#about-me-external-links-container > ul {
-  text-decoration: none;
-  list-style-type: none;
-}
-
-#about-me-external-links-container > ul > li > a {
+.about-me-external-links-container > ul > li > a {
   text-decoration: none;
   color: white;
 }
+
