@@ -3,6 +3,15 @@
 @import 'switch-toggle.css';
 @import 'button.css';
 
+/* ========= */
+/* Variables */
+/* ========- */
+:root {
+  --dark-colour-level-one: #121212;
+  --dark-colour-level-two: #191818;
+  --dark-colour-level-three: #1E1E1E;
+}
+
 *, *::before, *::after {
   box-sizing: inherit;
 }
@@ -11,15 +20,12 @@ p {
   font-family: 'Open Sans', sans-serif;
 }
 
-html  body {
+body {
   margin: 0;
   box-sizing: border-box;
   font-family: 'Montserrat', sans-serif;
   color: white;
-  background-color: #121212;
-}
-
-body {
+  background-color: var(--dark-colour-level-one);
   display: grid;
   grid-template-columns: 40px 1fr 40px;
   max-width: 100vw;
@@ -44,6 +50,7 @@ ul {
 b {
   font-weight: 900;
 }
+
 /* ============== */
 /* Navigation Bar */
 /* ============== */
@@ -55,7 +62,7 @@ b {
   right: 0;
   width: 100%;
   height: 50px;
-  background-color: #1E1E1E;
+  background-color: var(--dark-colour-level-three);
   align-items: center;
   justify-content: space-between;
   box-shadow: 0px 10px 6px -6px black;
@@ -111,25 +118,19 @@ b {
 /* ======== */
 /* About Me */
 /* ======== */
-
 #about-me {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
-#about-me-container {
+.about-me-container {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
-.about-me-container {
-  border-radius: 30px;
-  background-color: #191818;
-}
-
-.section-title {
+.page-section > .section-title {
   text-transform: uppercase;
   font-style: italic;
   text-decoration: underline;
@@ -146,6 +147,17 @@ b {
 .about-me-image {
   border-radius: 30px;
   width: auto;
+}
+
+.aboout-me-external-links-container {
+  display: flex;
+  flex-direction: column;
+
+}
+
+.about-me-external-links-container > ul {
+  display: flex;
+  flex-direction: column;
 }
 
 .about-me-external-links-container > ul > li > a {
