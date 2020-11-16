@@ -82,6 +82,7 @@ b {
   top: 0;
   left: 0;
   right: 0;
+  z-index: 900;
   width: 100%;
   height: 50px;
   background-color: var(--dark-colour-level-three);
@@ -226,24 +227,31 @@ b {
   font-size: 2em;
   position: relative;
   bottom: 1.25em;
+  left: 1em;
 }
 
-.about-me-experience > .experience-container {
+.about-me-experience > .experience-container, .education-flex-container > .education-container {
   background-color: var(--dark-colour-level-three);
   border-radius: 10px;
   padding: 1em ;
 }
 
-.experience-header > h4 {
+.experience-header > :nth-child(2), .education-header > :nth-child(2),
+.experience-sub-header > :nth-child(2), .education-sub-header > :nth-child(2) {
   font-style: italic;
 }
 
-.experience-sub-header {
+.experience-sub-header, .education-sub-header {
+  font-size: 0.75em;
+  margin: 0.5em 0;
+}
+
+.experience-sub-header, .education-sub-header {
   display: flex;
   justify-content: space-between;
 }
 
-.experience-container {
+.experience-container, .education-flex-container {
   position: relative;
   bottom: 1.25em;
 }
@@ -251,6 +259,8 @@ b {
 .experience-container > ul {
   padding-left: 3em;
   list-style-type: square;
+  font-size: 0.9em;
+  font-family: 'Open Sans', sans-serif;
 }
 
 .about-me-education {
@@ -259,5 +269,11 @@ b {
 
 .about-me-experience, .about-me-education {
   margin-top: 2em;
+}
+
+.education-flex-container {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
 }
 
