@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,800;1,900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
 @import 'switch-toggle.css';
 @import 'button.css';
@@ -223,7 +223,7 @@ b {
 
 .about-me-experience > h2, .about-me-education > h2 {
   font-style: italic;
-  font-weight: bolder;
+  font-weight: 600;
   font-size: 2em;
   position: relative;
   bottom: 1.25em;
@@ -299,3 +299,83 @@ b {
   background-color: #153C70;
 }
 
+.portfolio-container {
+  display: flex;
+  flex-direction: column;
+  gap: 3em;
+  background-color: unset;
+  border-radius: 0;
+  box-shadow: unset;
+}
+
+.portfolio-project-container {
+  background-color: var(--dark-colour-level-two);
+  border-radius: 30px;
+  padding: 2em;
+  box-shadow: 0px 10px 6px -6px var(--dark-colour-shadow);
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+}
+
+.project-title {
+  font-style: italic;
+  font-weight: 600;
+  font-size: 3em;
+  position: relative;
+  bottom: 1.25em;
+  left: 1em;
+}
+
+.portfolio-image-container {
+  width: 250px;
+  height: 250px;
+  background-color: var(--dark-colour-level-three);
+  box-shadow: 0px 10px 6px -6px var(--dark-colour-shadow);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 20px;
+  align-self: center;
+}
+
+.technologies-used {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+}
+
+.technologies-used >:first-child {
+  font-weight: 600;
+  font-size: 2em;
+}
+
+.technologies-used-container {
+  display: flex;
+  gap: 1em;
+}
+
+.technologies-used-container > div {
+  background-color: var(--dark-colour-level-three);
+  box-shadow: 0px 10px 6px -6px var(--dark-colour-shadow);
+  border-radius: 5px;
+  padding: 1em;
+}
+
+.external-links {
+  align-self: center;
+  display: flex;
+  gap: 2em;
+}
+
+.external-links img {
+  width: 50px;
+}
+
+.external-links img:hover {
+  opacity: 0.5;
+}
+
+.external-links a {
+  text-decoration: none;
+}
