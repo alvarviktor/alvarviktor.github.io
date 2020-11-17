@@ -31,7 +31,7 @@ body {
   color: white;
   background-color: var(--dark-colour-level-one);
   display: grid;
-  grid-template-columns: 40px 1fr 40px;
+  grid-template-columns: 10px 1fr 10px;
 }
 
 body > * {
@@ -69,7 +69,6 @@ b {
   background-color: var(--dark-colour-level-two);
   border-radius: 30px;
   box-shadow: 0px 10px 6px -6px var(--dark-colour-shadow);
-  padding: 1em;
 }
 
 /* ============== */
@@ -151,20 +150,20 @@ b {
 .about-me-image {
   background-color: unset;
   padding: 0;
-  width: 100%;
+  width: 80%;
 }
 
 .about-me-external-links-container {
   display: flex;
-  justify-content: center;
-  width: 100%;
+  flex-direction: column;
+  gap: 1em;
 }
 
 .links-grid {
   display: grid;
-  grid-template-columns: 50px 1fr;
+  grid-template-columns: min-content 1fr;
   gap: 1em;
-  width: 100%;
+  align-self: center;
 }
 
 .links-grid :nth-child(odd) {
@@ -227,7 +226,6 @@ b {
   font-size: 2em;
   position: relative;
   bottom: 1.25em;
-  left: 1em;
 }
 
 .about-me-experience > .experience-container, .education-flex-container > .education-container {
@@ -325,7 +323,6 @@ b {
   font-size: 2em;
   position: relative;
   bottom: 1.25em;
-  left: 1em;
 }
 
 .portfolio-image-container {
