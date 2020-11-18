@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,800;1,900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap');
 @import 'switch-toggle.css';
 @import 'button.css';
 
@@ -31,7 +31,7 @@ body {
   color: white;
   background-color: var(--dark-colour-level-one);
   display: grid;
-  grid-template-columns: 10px 1fr 10px;
+  grid-template-columns: 15px 1fr 15px;
 }
 
 body > * {
@@ -39,7 +39,6 @@ body > * {
 }
 
 h1, h2, h3, h4 {
-  font-weight: 300;
   margin: 0;
 }
 
@@ -51,7 +50,7 @@ ul {
 }
 
 b {
-  font-weight: 900;
+  font-weight: 900 !important;
 }
 
 /* ============= */
@@ -69,6 +68,10 @@ b {
   background-color: var(--dark-colour-level-two);
   border-radius: 30px;
   box-shadow: 0px 10px 6px -6px var(--dark-colour-shadow);
+}
+
+.page-section > div {
+  padding: 1em;
 }
 
 /* ============== */
@@ -121,11 +124,12 @@ b {
 .header-container {
   display: flex;
   flex-direction: column;
-  padding: 5px;
+  gap: 0.5em;
+  align-items: center;
 }
 
-.header-container > * {
-  margin: 5px;
+.header-container * {
+  font-weight: 300;
 }
 
 .head-subtitle, .action-button {
@@ -186,6 +190,7 @@ b {
 
 .about-me-blurb {
   width: 100%;
+  letter-spacing: 1px;
 }
 
 .about-me-skills {
@@ -204,12 +209,14 @@ b {
 
 .skills-container > ul {
   display: grid;
+  grid-template-columns: repeat(3, 1fr);
   gap: 1em;
 }
 
 .skills-container > ul > li {
   background-color: var(--dark-colour-level-three);
   text-align: center;
+  font-size: 0.75em;
   border-radius: 5px;
   box-shadow: 2px 2px 6px var(--dark-colour-shadow);
   padding: 1em;
@@ -255,9 +262,12 @@ b {
 }
 
 .experience-container > ul {
-  padding-left: 3em;
-  list-style-type: square;
-  font-size: 0.9em;
+  padding-left: 1.5em;
+  list-style-type: disc;
+  line-height: 1.5em;
+  letter-spacing: 0.5px;
+  font-size: 0.8em;
+  font-weight: 400;
   font-family: 'Open Sans', sans-serif;
 }
 
@@ -275,6 +285,10 @@ b {
   gap: 1em;
 }
 
+.about-me-education h4, .about-me-experience h4 {
+  font-weight: 500;
+}
+
 .portfolio-nav {
   background-color: unset;
   border-radius: 0px;
@@ -284,6 +298,7 @@ b {
 .portfolio-nav > ul {
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
   gap: 1em;
 }
 
@@ -305,12 +320,13 @@ b {
   background-color: unset;
   border-radius: 0;
   box-shadow: unset;
+  padding: 0 !important;
 }
 
 .portfolio-project-container {
   background-color: var(--dark-colour-level-two);
   border-radius: 30px;
-  padding: 2em;
+  padding: 1em 1.5em 1.5em 1.5em;
   box-shadow: 0px 10px 6px -6px var(--dark-colour-shadow);
   display: flex;
   flex-direction: column;
@@ -320,9 +336,8 @@ b {
 .project-title {
   font-style: italic;
   font-weight: 600;
-  font-size: 2em;
-  position: relative;
-  bottom: 1.25em;
+  font-size: 2.25em;
+  text-align: center;
 }
 
 .portfolio-image-container {
@@ -352,19 +367,21 @@ b {
 
 .technologies-used >:first-child {
   font-weight: 600;
-  font-size: 2em;
+  font-size: 1em;
 }
 
 .technologies-used-container {
-  display: flex;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
   gap: 1em;
-  flex-wrap: wrap;
 }
 
 .technologies-used-container > div {
   background-color: var(--dark-colour-level-three);
-  box-shadow: 0px 10px 6px -6px var(--dark-colour-shadow);
+  text-align: center;
+  font-size: 0.75em;
   border-radius: 5px;
+  box-shadow: 2px 2px 6px var(--dark-colour-shadow);
   padding: 1em;
 }
 
@@ -372,10 +389,11 @@ b {
   align-self: center;
   display: flex;
   gap: 2em;
+  margin-top: 1em;
 }
 
 .external-links img {
-  width: 50px;
+  width: 30px;
 }
 
 .external-links img:hover {
