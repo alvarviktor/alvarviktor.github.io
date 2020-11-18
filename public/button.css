@@ -1,13 +1,14 @@
-button.action-button {
+.action-button {
   background-color: #153C70;
   color: white;
   font-family: 'Montserrat', sans-serif;
-  font-weight: 600;
+  font-weight: 600 !important;
   padding: 0.5em 1em;
   border: none;
   border-radius: 10px;
+  text-decoration: none;
 }
 
-button.action-button:hover {
+.action-button:hover {
   cursor: pointer;
 }
